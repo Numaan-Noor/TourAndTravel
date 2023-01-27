@@ -21,6 +21,22 @@ def index(request):
         context ={"Tittle": "index"}
         return render(request, "index.html", context)
 
+def about(request):
+    if request.method == "GET":
+        context ={"Tittle": "about"}
+        return render(request, "about.html", context)
+
+def contact(request):
+    if request.method == "GET":
+        context ={"Tittle": "contact"}
+        return render(request, "contact.html", context)
+
+def services(request):
+    if request.method == "GET":
+        context ={"Tittle": "services"}
+        return render(request, "services.html", context)
+
+
 # def newarrival(request):
 #     if request.method == "GET":
 #         product = Product.objects.all()
