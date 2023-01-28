@@ -71,11 +71,11 @@
             <div class="logo"><a href="index.html"><img src="static/assets/images/logo.png"></a></div>
             <div class="menu_main">
                <ul>
-                  <li class="active"><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="contact.html">Contact us</a></li>
+                  <li class="active"><a href="{% url 'index' %}">Home</a></li>
+                  <li><a href="{% url 'about' %}">About</a></li>
+                  <li><a href="{% url 'services' %}">Services</a></li>
+<!--                  <li><a href="blog.html">Blog</a></li>-->
+                  <li><a href="{% url 'contact' %}">Contact us</a></li>
                </ul>
             </div>
          </div>
@@ -128,7 +128,6 @@
    <!-- javascript -->
    <script src="static/assets/js/owl.carousel.js"></script>
    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-   </div>
 </body>
 
 </html>
