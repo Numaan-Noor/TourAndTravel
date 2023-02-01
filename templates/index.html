@@ -95,29 +95,34 @@
    </div>
    <!-- header section end -->
    <!-- services section start -->
-   <div class="services_section layout_padding">
-      <div class="container">
-         <h1 class="services_taital">Services </h1>
-         <p class="services_text">There are many variations of passages of Lorem Ipsum available, but the majority have
-            suffered alteration</p>
-         <div class="services_section_2">
-            <div class="row">
-               <div class="col-md-4">
-                  <div><img src="static/assets/images/img-1.png" class="services_img"></div>
-                  <div class="btn_main"><a href="#">Rafting</a></div>
-               </div>
-               <div class="col-md-4">
-                  <div><img src="static/assets/images/img-2.png" class="services_img"></div>
-                  <div class="btn_main active"><a href="#">Hiking</a></div>
-               </div>
-               <div class="col-md-4">
-                  <div><img src="static/assets/images/img-3.png" class="services_img"></div>
-                  <div class="btn_main"><a href="#">Camping</a></div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
+<!--   <div class="services_section layout_padding">-->
+<!--      <div class="container">-->
+<!--         <h1 class="services_taital">Services </h1>-->
+<!--         <p class="services_text">There are many variations of passages of Lorem Ipsum available, but the majority have-->
+<!--            suffered alteration</p>-->
+<!--         <div class="services_section_2">-->
+<!--            <div class="row">-->
+<!--               <div class="col-md-4">-->
+<!--                  <div><img src="static/assets/images/img-1.png" class="services_img"></div>-->
+<!--                  <div class="btn_main"><a href="#">Rafting</a></div>-->
+<!--               </div>-->
+<!--               <div class="col-md-4">-->
+<!--                  <div><img src="static/assets/images/img-2.png" class="services_img"></div>-->
+<!--                  <div class="btn_main active"><a href="#">Hiking</a></div>-->
+<!--               </div>-->
+<!--               <div class="col-md-4">-->
+<!--                  <div><img src="static/assets/images/img-3.png" class="services_img"></div>-->
+<!--                  <div class="btn_main"><a href="#">Camping</a></div>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--         </div>-->
+<!--      </div>-->
+<!--   </div>-->
+<!-- Card -->
+
+
+
+
    <!-- services section end -->
    <!-- about section start -->
    <div class="about_section layout_padding">
@@ -156,11 +161,16 @@
    <div class="choose_section layout_padding">
       <div class="container">
          <h1 class="choose_taital">Why Choose Us</h1>
-         <p class="choose_text">There are many variations of passages of Lorem Ipsum available, but the majority have
-            suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
-            believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-            embarrassing hidden in the middle of text. All </p>
-         <div class="read_bt_1"><a href="#">Read More</a></div>
+         <p class="choose_text">1. Experienced travel experts: Our team is made up of travel enthusiasts with years of experience in the industry, ensuring that you receive top-notch service and guidance throughout your trip. </p>
+          <p class="choose_text">2. Affordable pricing: We strive to provide the best value for your money, with tour packages that are priced competitively and transparently.</p>
+
+          <p class="choose_text">3. Personalized attention: Our team is dedicated to providing personalized service, taking into account your individual needs and requirements to craft a tour that's perfect for you.</p>
+          <p class="choose_text">4. Unbeatable destinations: From exotic destinations to hidden gems, we have scoured the world to bring you the most beautiful and exciting places to visit</p>
+          <p class="choose_text">5.Convenient booking process: Booking a tour with us is simple and straightforward, with a user-friendly website and 24/7 customer support to assist you every step of the way.</p>
+          <p class="choose_text">6. Stress-free travel: Let us handle all the logistics, from transportation to accommodation and activities, so you can sit back, relax, and enjoy the rid</p>
+         <div class="read_bt_1"><a onclick="myFunction()" id="myBtn">Read More</a></div>
+
+
          <div class="newsletter_box">
             <h1 class="let_text">Let Start Talk with Us</h1>
             <div class="getquote_bt"><a href="#">Get A Quote</a></div>
@@ -168,6 +178,23 @@
       </div>
    </div>
    <!-- choose section end -->
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
 
 
  
