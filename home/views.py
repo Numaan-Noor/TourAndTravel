@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-# from .models import *
+from .models import *
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
 from django.http import JsonResponse
@@ -13,13 +13,21 @@ from django.core.mail import send_mail, BadHeaderError
 from django import forms
 from django.conf import settings
 
-
-
+# wall = wallpaper.objects.filter(categories_id=pk)
 
 def index(request):
     if request.method == "GET":
-        context ={"Tittle": "index"}
+        data = Category.objects.all()
+        # data2 = Tour_Pakages.objects.filter(cat=pk)
+        context ={"Tittle": "index", "data":data}
         return render(request, "index.html", context)
+def services(request,pk):
+    if request.method == "GET":
+        pro = Tour_Pakages.objects.filter(cat=pk)
+        cat = Category.objects.get(id=pk)
+        context ={"Tittle": "services", "data": pro, "data2": cat}
+        return render(request, "services.html", context)
+
 
 def about(request):
     if request.method == "GET":
@@ -31,10 +39,7 @@ def contact(request):
         context ={"Tittle": "contact"}
         return render(request, "contact.html", context)
 
-def services(request):
-    if request.method == "GET":
-        context ={"Tittle": "services"}
-        return render(request, "services.html", context)
+
 
 
 # def newarrival(request):

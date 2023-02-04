@@ -94,18 +94,21 @@
       <!-- banner section end -->
    </div>
    <!-- header section end -->
+
    <!-- services section start -->
-<!--   <div class="services_section layout_padding">-->
-<!--      <div class="container">-->
-<!--         <h1 class="services_taital">Services </h1>-->
-<!--         <p class="services_text">There are many variations of passages of Lorem Ipsum available, but the majority have-->
-<!--            suffered alteration</p>-->
-<!--         <div class="services_section_2">-->
-<!--            <div class="row">-->
-<!--               <div class="col-md-4">-->
-<!--                  <div><img src="static/assets/images/img-1.png" class="services_img"></div>-->
-<!--                  <div class="btn_main"><a href="#">Rafting</a></div>-->
-<!--               </div>-->
+   <div class="services_section layout_padding">
+      <div class="container">
+         <h1 class="services_taital">Services </h1>
+         <p class="services_text">There are many variations of passages of Lorem Ipsum available, but the majority have
+            suffered alteration</p>
+         <div class="services_section_2">
+            <div class="row">
+                {% for d in data %}
+               <div class="col-md-4">
+                  <div><img src="/media/{{d.Image}}" class="services_img"></div>
+                  <div class="btn_main"><a href="/services/{{d.id}}">{{d.Name}}</a></div>
+               </div>
+                {% endfor %}
 <!--               <div class="col-md-4">-->
 <!--                  <div><img src="static/assets/images/img-2.png" class="services_img"></div>-->
 <!--                  <div class="btn_main active"><a href="#">Hiking</a></div>-->
@@ -114,11 +117,10 @@
 <!--                  <div><img src="static/assets/images/img-3.png" class="services_img"></div>-->
 <!--                  <div class="btn_main"><a href="#">Camping</a></div>-->
 <!--               </div>-->
-<!--            </div>-->
-<!--         </div>-->
-<!--      </div>-->
-<!--   </div>-->
-<!-- Card -->
+            </div>
+         </div>
+      </div>
+   </div>
 
 
 
