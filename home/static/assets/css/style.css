@@ -544,12 +544,16 @@ button {
 .blog_section {
     width: 100%;
     float: left;
-    background-image: url(../images/gifrun.gif);
+    background-image: url(../images/design.jpg);
     height: auto;
     background-repeat: no-repeat;
     background-size: 100%;
     padding-bottom: 345px;
     padding-top: 200px;
+    min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 .blog_taital {
