@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'TourAndTravel.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ttdb',
+        'NAME': 'test',
         'USER': 'postgres',
         'PASSWORD': 'database',
         'HOST': 'localhost',
