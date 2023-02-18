@@ -72,24 +72,34 @@
   </div>   -->
   <div class="row">
 
-      {% for d in data %}
-    <div class="col-md-3 col-sm-6 item">
-      <div class="card item-card card-block">
-      <h4 class="item-card-title text-right"><i class="material-icons">settings</i></h4>
-    <img class="imgs" src="/media/{{d.Image}}" alt="Photo of sunset">
-        <h5 class="card-title  mt-3 mb-3">{{d.Name}}</h5>
-        <p class="card-text">This is a company that builds websites, web .</p>
-  </div>
-    </div>
-      {% endfor %}
-      <div class="card mb-3">
-  <img  style="height:300px;width:100%" class="card-img-top" src="/static/assets/images/design.jpg" alt="Card image cap">
+<!--      {% for d in data %}-->
+<!--    <div class="col-md-3 col-sm-6 item">-->
+<!--      <div class="card item-card card-block">-->
+<!--      <h4 class="item-card-title text-right"><i class="material-icons">settings</i></h4>-->
+<!--    <img class="imgs" src="/media/{{d.Image}}" alt="Photo of sunset">-->
+<!--        <h5 class="card-title  mt-3 mb-3">{{d.Name}}</h5>-->
+<!--        <p class="card-text">This is a company that builds websites, web .</p>-->
+<!--  </div>-->
+<!--    </div>-->
+<!--      {% endfor %}-->
+          {% for d in data %}
+      <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/media/{{d.Image}}" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <h5 class="card-title"><strong>{{d.Name}}</strong></h5>
+<!--    <p class="card-text" style="margin:0px;">Price</p>-->
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Price: {{d.Price}}</li>
+    <li class="list-group-item">Location: {{d.Locations}}</li>
+<!--    <li class="list-group-item">Vestibulum at eros</li>-->
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">{{d.Days}} Days</a>
+    <a href="#" class="card-link">{{d.Nights}} Nights</a>
   </div>
 </div>
+          {% endfor %}
   </div>
 
 </div>
