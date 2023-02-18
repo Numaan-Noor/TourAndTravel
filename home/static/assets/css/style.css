@@ -337,7 +337,7 @@ button {
 
 .header_main {
     width: 100%;
-    background-image: url(../images/header-bg.png);
+    background-image: url(/static/assets/images/header-bg.png);
     background-size: 100%;
     padding: 10px 0px 0px 0px;
 }
@@ -900,7 +900,7 @@ button {
 .footer_section {
     width: 100%;
     float: left;
-    background-image: url(../images/footer-bg.png);
+    background-image: url(/static/assets/images/footer-bg.png);
     height: auto;
     padding-top: 250px;
     background-size: 100% 100%;

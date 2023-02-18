@@ -19,3 +19,12 @@ class Tour_Pakages(models.Model):
 
     def __str__(self):
         return self.Name
+
+class contact(models.Model):
+    Name = models.CharField(max_length=200)
+    Phnumber = models.IntegerField()
+    Email = models.EmailField()
+    Massage = models.CharField(max_length=20000)
+
+    def __str__(self):
+        return self.Name
